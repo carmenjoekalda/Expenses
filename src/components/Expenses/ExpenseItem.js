@@ -6,11 +6,11 @@ import Card from "../UI/Card.js"
 
 const ExpenseItem = (props) => {
 	const [title, setTitle] = useState(props.expenseData.title)
-
+	
 	const clickHandler = () => {
 		setTitle('Updated!')
 		console.log(title)
-	}
+	} 
 
 	return (
 		<Card className="expense-item">
@@ -22,6 +22,7 @@ const ExpenseItem = (props) => {
 			<button onClick={clickHandler}>Change Title</button> 
 		</Card>
 	)
+
 }
 
 export default ExpenseItem
